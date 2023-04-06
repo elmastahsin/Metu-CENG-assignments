@@ -17,4 +17,8 @@ Every assignment given in the course
 ## [CENG 213 Data Structures](https://github.com/elmastahsin/Metu-CENG-assignment//tree/master/213)
 Implementations of several data structures with various scenarios, written in C++-->
 
+## [CENG 222 Statistical Methods of Computer Engineering](https://github.com/elmastahsin/Metu-CENG/tree/master/222)
 
+
+## [CENG 232 Logic Design](https://github.com/elmastahsin/Metu-CENG/tree/master/232)
+Some verilog stuff
