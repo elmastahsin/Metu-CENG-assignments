@@ -4,7 +4,7 @@ Clone with submodules (since some courses have their own repositories I've bound
 
 Alternatively, if you didn't use `--recursive` option while cloning, you can use:
 ```
-cd Metu-CENG-assignment
+cd Metu-CENG-assignments
 git submodule init
 git submodule update
 ```
