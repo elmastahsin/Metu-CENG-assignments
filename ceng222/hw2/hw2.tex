@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+
+\usepackage[hmargin=3cm,vmargin=6.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+%misc libraries goes here
+
+\begin{document}
+
+\section*{Student Information } 
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name :  Tahsin ELMAS\\
+Id Number :  2476844\\
+
+% Write your answers below the section tags
+\section*{Answer 1}
+
+\subsection*{a)} To find the joint density function $f(t_A, t_B)$, we use the fact that $T_A$ and $T_B$ are independent and uniformly distributed between [0, 100] milliseconds. The probability density function (pdf) of a uniform distribution between $a$ and $b$ is $\frac{1}{b-a}$, so we have:\\
+
+$$ f\left(t_A\right)=\frac{1}{100-0}=\frac{1}{100} \text { for } 0 \leq t_A \leq 100 $$
+$$f\left(t_B\right)=\frac{1}{100-0}=\frac{1}{100} \text { for } 0 \leq t_B \leq 100 $$
+$$f\left(t_A, t_B\right)=f\left(t_A\right) \cdot f\left(t_B\right)=\frac{1}{10000} \text { for } 0 \leq t_A, t_B \leq 100$$
+$$f\left(t_A, t_B\right)= \begin{cases}\frac{1}{10000} & 0 \leq t_A, t_B \leq 100 \\ 0 & \text { otherwise }\end{cases}$$
+The joint cdf $F(t_A, t_B)$ can be found by integrating the joint density function:
+$$ F\left(t_A, t_B\right)=\int_0^{t_A} \int_0^{t_B} f(u, v) d u d v=\int_0^{t_A} \int_0^{t_B} f(u) \cdot f(v) d u d v $$
+By substituting the pdfs we previously found, we get:
+$$ F\left(t_A, t_B\right)=\frac{t_A \cdot t_B}{10000} \text { for } 0 \leq t_A, t_B \leq 100$$
+As a result :
+$$F\left(t_A, t_B\right)= \begin{cases}0 & t_A<0 \text { or } t_B<0 \\ \frac{t_A \cdot t_B}{10000} & 0 \leq t_A, t_B \leq 100 \\ t_A \cdot \frac{100}{10000} & 0 \leq t_A \leq 100, t_B>100 \\ t_B \cdot \frac{100}{10000} & t_A>100,0 \leq t_B \leq 100 \\ 1 & t_A>100 \text { or } t_B>100\end{cases}$$
+
+\subsection*{b)} 
+
+ We need to find the probability that $ T_A \leq 30 $ and $ 40 \leq T_B \leq 60$. This can be expressed as:
+$$ P\left(0 \leq T_A \leq 30 \cap 40 \leq T_B \leq 60\right)=\int_{40}^{60}\int_{0}^{30}  f\left(t_A, t_B\right) d t_A d t_B $$
+ $$P\left(0 \leq T_A \leq 30 \cap 40 \leq T_B \leq 60\right)=\int_{40}^{60} \int_{0}^{30}  \frac{1}{10000} d t_A d t_B $$
+$$P\left(0 \leq T_A \leq 30 \cap 40 \leq T_B \leq 60\right)=\frac{6}{1000} = 0.006 $$ 
+ 
+
+
+\subsection*{c)} 
+
+\subsection*{d)} 
+
+
+\section*{Answer 2}
+
+\subsection*{a)} 
+
+\subsection*{b)} 
+
+
+\section*{Answer 3}
+
+
+\section*{Answer 4}
+
+\subsection*{a)} 
+
+\subsection*{b)} 
+
+\subsection*{c)} 
+
+\end{document}
