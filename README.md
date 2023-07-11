@@ -13,9 +13,10 @@ git submodule update
 
 ## [CENG 140 C Programming](https://github.com/elmastahsin/Metu-CENG-assignments/tree/master/ceng140)
 Every assignment given in the course
-<!--
-## [CENG 213 Data Structures](https://github.com/elmastahsin/Metu-CENG-assignments/tree/master/213)
-Implementations of several data structures with various scenarios, written in C++-->
+
+## [CENG 213 Data Structures](https://github.com/elmastahsin/Metu-CENG-assignments/tree/master/ceng213)
+Implementations of several data structures with various scenarios, written in C++
+
 
 ## [CENG 222 Statistical Methods of Computer Engineering](https://github.com/elmastahsin/Metu-CENG-assignments/tree/master/ceng222)
 
